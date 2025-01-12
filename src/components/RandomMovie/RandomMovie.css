@@ -1,0 +1,148 @@
+/* .btn-reset {
+  outline: none;
+  padding: 0;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+} */
+
+.random {
+  position: relative;
+  display: flex;
+  justify-content: end;
+  margin-bottom: 43px;
+  width: 100%;
+  min-height: 500px;
+}
+
+.random__top {
+  display: flex;
+}
+
+.random__img {
+  max-height: 680px;
+  max-width: 900px;
+}
+
+.random__content {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto 0;
+  max-width: 600px;
+  height: 100%;
+}
+
+.random__content-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.random__list {
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 133%;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.random-list__item:not(:last-child) {
+  margin-right: 16px;
+}
+
+.random__title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 117%;
+  color: #fff;
+}
+
+.random__description {
+  max-height: 230px;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.1);
+  text-overflow: ellipsis;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 133%;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.random-list__rating {
+  display: flex;
+  align-items: center;
+  border-radius: 16px;
+  padding: 4px 12px;
+  width: fit-content;
+}
+
+.rating__8 {
+  background-color: #a59400;
+}
+
+.rating__7 {
+  background-color: #308e21;
+}
+
+.rating__6 {
+  background-color: #777;
+}
+
+.rating__4 {
+  background-color: #c82020;
+}
+
+.rating__star {
+  margin-right: 4px;
+  width: 16px;
+  height: 16px;
+  background-image: url(../../assets/star.png);
+}
+
+.rating__number {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 133%;
+  color: #fff;
+}
+
+.random__bottom {
+  display: flex;
+  align-items: center;
+}
+
+.random__btn:not(:last-child) {
+  margin-right: 16px;
+}
+
+.favourites__icon {
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-image: url(../../assets/favourites.svg);
+}
+
+.favourites__icon-true {
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-image: url(../../assets/favourites=true.svg);
+}
+
+.favourites:hover {
+  background-color: #747474;
+}
+
+.update__icon {
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-image: url(../../assets/update.svg);
+}

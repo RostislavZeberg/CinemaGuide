@@ -1,0 +1,63 @@
+.form-field {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  /* gap: 8px; */
+  width: 100%;
+}
+
+.form-field__label {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.form-field__error-text {
+  border-color: #ff7575;
+  color: #ff7575;
+  font-size: 12px;
+}
+
+.input-block {
+  position: relative;
+}
+
+.input-block > input {
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 8px;
+  padding-top: 16px;
+  padding-right: 16px;
+  padding-bottom: 16px;
+  padding-left: 52px;
+  width: calc(340px - 16px - 52px);
+  height: calc(56px - 16px * 2);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 133%;
+  color: #000;
+}
+
+.input-svg {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 16px;
+  bottom: 0;
+}
+
+.input-svg path {
+  fill: rgba(0, 0, 0, 0.4);
+}
+
+.input-block:focus-within > input,
+.input-block:focus-within > svg path,
+.input-block:hover > input,
+.input-block:hover > svg path {
+  outline: none;
+  border-color: #b4a9ff;
+  fill: #b4a9ff;
+}
+
+.input-block > input:invalid {
+  border-color: #ff7575;
+}

@@ -1,0 +1,11 @@
+.page-genres {
+  text-align: center;
+}
+
+.page-genres__list {
+  margin-bottom: 64px;
+}
+
+.btn-none {
+  display: none;
+}

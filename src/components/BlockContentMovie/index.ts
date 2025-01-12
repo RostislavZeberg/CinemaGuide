@@ -1,0 +1,1 @@
+export { BlockContentMovie } from "./BlockContentMovie";

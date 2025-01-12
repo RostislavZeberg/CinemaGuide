@@ -1,0 +1,30 @@
+.description__title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 120%;
+  color: #fff;
+}
+
+.description__list {
+  width: fit-content;
+  min-width: 500px;
+}
+
+.description__item {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 133%;
+  color: #fff;
+}
+
+.description__item:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.point {
+  flex-grow: 1;
+  min-width: 50px;
+  border-bottom: 1px dotted #fff;
+}

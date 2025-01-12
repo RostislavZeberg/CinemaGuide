@@ -1,0 +1,30 @@
+.movies-genre__title-link {
+  margin-bottom: 64px;
+}
+
+.movies-genre__title-icon {
+  margin-right: 30px;
+}
+
+.movies-genre__title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 117%;
+  color: #fff;
+}
+
+@media screen and (max-width: 850px) {
+  .movies-genre__title-link {
+    margin-left: 20px;
+  }
+
+  .movies-genre__title {
+    font-size: 24px;
+    line-height: 133%;
+  }
+
+  .movies-genre__title-icon {
+    width: 12px;
+    height: 18px;
+  }
+}

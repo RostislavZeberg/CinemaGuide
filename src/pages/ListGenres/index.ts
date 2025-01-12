@@ -1,0 +1,1 @@
+export { ListGenres } from "./ListGenres";

@@ -1,0 +1,91 @@
+.account {
+  padding-top: 32px;
+}
+
+.account__title {
+  margin-bottom: 64px;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 117%;
+  color: #fff;
+}
+
+.account__block {
+  display: flex;
+  gap: 64px;
+  margin-bottom: 64px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 133%;
+  color: #fff;
+}
+
+.block__item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.block__title {
+  margin: 0;
+}
+
+.setting__descr {
+  margin-bottom: 64px;
+}
+
+.setting__block {
+  display: flex;
+  align-items: center;
+}
+
+.setting__block:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.setting__title {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 133%;
+  color: #fff;
+}
+
+.setting__background {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 16px;
+  border-radius: 30px;
+  width: 60px;
+  height: 60px;
+  background-color: rgba(255, 255, 255, 0.5);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 133%;
+  color: #fff;
+}
+
+.user__name {
+  display: flex;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 133%;
+  color: #fff;
+}
+
+.name__name {
+  margin-right: 9px;
+}
+
+.btn-exit {
+  padding: 18px 48px;
+}
+
+.block__title-favorite::before {
+  content: "Избранные фильмы";
+}
+
+.block__title-setting::before {
+  content: "Настройка аккаунта";
+}

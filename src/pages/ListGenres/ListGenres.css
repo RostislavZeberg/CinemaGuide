@@ -1,0 +1,12 @@
+.genres-list {
+  color: green;
+}
+
+.genres-list__title {
+  color: #fff;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 117%;
+  margin-bottom: 64px;
+  margin-left: 20px;
+}

@@ -1,0 +1,6 @@
+.spinner {
+  width: 40px;
+  height: 40px;
+  background-image: url(../../assets/oval.svg);
+  background-size: cover;
+}
