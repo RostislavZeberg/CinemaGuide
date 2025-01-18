@@ -25,4 +25,4 @@
 ### Сборка Приложение - команда npm run build.
 
 ### Для локального просмотра из скаченного и развёрнутого кода необходимо внести изменения в файле App.tsx:
-<br/> - в маршрутизаторе BrowserRouter удалить basename='/CinemaGuide/'
+- в маршрутизаторе BrowserRouter удалить basename='/CinemaGuide/'
