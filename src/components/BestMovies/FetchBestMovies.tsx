@@ -3,8 +3,9 @@ import { fetchBestMovies } from "../../api/Movie";
 import { queryClient } from "../../api/queryClient";
 import { Loader } from "../Loader";
 import { BestMovies } from "./BestMovies";
+import { memo } from "react";
 
-export const FetchBestMovies = () => {
+export const FetchBestMovies = memo(() => {
   const bestMoviesQuery = useQuery(
     {
       queryFn: () => fetchBestMovies(),
@@ -28,4 +29,4 @@ export const FetchBestMovies = () => {
         </div>
       );
   }
-};
+});

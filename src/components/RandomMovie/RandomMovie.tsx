@@ -1,14 +1,13 @@
 import { FC, useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 
 import { Movie } from "../../api/Movie";
 import { BlockContentMovie } from "../BlockContentMovie";
 import { ButtonFavoriteChange } from "../ButtonFavoriteChange";
-import { ButtonTrailer } from "../ButtonTrailer";
-import { ButtonUpdate } from "../ButtonUpdate";
-import empty from '../../../public/empty_img.jpeg'
 
 import "./RandomMovie.css";
+import { ButtonTrailer } from "../ButtonTrailer";
+import { ButtonUpdate } from "../ButtonUpdate";
+import { Link } from "react-router-dom";
 
 interface RandomMovieProps {
   movie: Movie;
@@ -38,9 +37,9 @@ export const RandomMovie: FC<RandomMovieProps> = ({
       <img
         className="random__img"
         src={
-          movie.backdropUrl ? movie.backdropUrl : empty
+          movie.backdropUrl ? movie.backdropUrl : "empty_img.jpeg"
         }
-        alt="img"
+        alt=""
       />
       <div className="random__content">
         <BlockContentMovie movie={movie} />

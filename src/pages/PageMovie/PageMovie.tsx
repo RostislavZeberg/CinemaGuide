@@ -1,12 +1,10 @@
 import { useLocation } from "react-router-dom";
-import { FC, useEffect, useState } from "react";
-
 import { BlockContentMovie } from "../../components/BlockContentMovie";
-import { ButtonFavoriteChange } from "../../components/ButtonFavoriteChange";
-import { ButtonTrailer } from "../../components/ButtonTrailer";
-import empty from '../../../public/empty_img.jpeg'
 
 import "./PageMovie.css";
+import { ButtonFavoriteChange } from "../../components/ButtonFavoriteChange";
+import { FC, useEffect, useState } from "react";
+import { ButtonTrailer } from "../../components/ButtonTrailer";
 
 interface PageMovieProps {
   onClick: (name: number) => void;
@@ -51,7 +49,7 @@ export const PageMovie: FC<PageMovieProps> = ({
         <img
           className="random__img"
           src={
-            movie.backdropUrl ? movie.backdropUrl : empty
+            movie.backdropUrl ? movie.backdropUrl : "empty_img.jpeg"
           }
           alt=""
         />

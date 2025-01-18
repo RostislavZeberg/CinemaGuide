@@ -15,7 +15,7 @@ export const MovieView: FC<MovieViewProps> = ({ movie, number }) => {
         <div className="card__number">{number}</div>
         <img
           className="card__img"
-          src={movie.posterUrl ? movie.posterUrl : "/src/assets/empty_img.webp"}
+          src={movie.posterUrl ? movie.posterUrl : "empty_img.jpeg"}
           alt=""
         />
       </div>

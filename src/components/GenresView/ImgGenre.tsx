@@ -2,7 +2,6 @@ import random from "random";
 import { FC } from "react";
 
 import { MovieList } from "../../api/Movie";
-import empty from '../../../public/empty_img.jpeg'
 
 export interface GenresViewProps {
   imgGenre: MovieList;
@@ -20,7 +19,7 @@ export const ImgGenre: FC<GenresViewProps> = ({ imgGenre }) => {
           borderTopLeftRadius: "24px",
           height: "100%",
         }}
-        src={MovieImg ? MovieImg : empty}
+        src={MovieImg ? MovieImg : "empty_img.jpeg"}
         alt=""
       />
     </div>

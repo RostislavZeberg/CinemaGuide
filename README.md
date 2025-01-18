@@ -1,27 +1,29 @@
-# React + TypeScript + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Приложение CinemaGuide создано на React + TypeScript + Vite
+1. На главной странице реализованы методы:
+<br/> - демонстрация рандомного фильма;
+<br/> - демонстрация фильмов ТОП-10;
+<br/> - вход в личный аккаунт, создание аккаунта;
+<br/> - поиск фильмов по названию;
+<br/> - переход в список жанров фильмов.
+2. В поле рандомного фильма реализованы методы:
+<br/> - добавление фильма в избранное (вам предложат войти в аккаунт или зарегистрироваться);
+<br/> - обновление рандомного фильма;
+<br/> - просмотр информации о фильме;
+<br/> - просмотр трейлера фильм (в связи с блокировкой Youtube трейлер не воспроизводится);
+3. На странице жанры фильмов реализованы методы:
+<br/> - переход к фильмам выбранного жанра;
+<br/> - расширение списка демонстрируемых фильмов (кнопка "Показать ещё").
+4. На фильмов выбранного жанры реализованы методы:
+<br/> - переход к фильму с детальной информацией;
+<br/> - возврат к странице жанры фильмов.
+5. На детальной странице фильма реализованы методы:
+<br/> - добавление фильма в избранное (вам предложат войти в аккаунт или зарегистрироваться);
+<br/> - просмотр трейлера фильм (в связи с блокировкой Youtube трейлер не воспроизводится);
+<br/> - демонстрируется детальная информация с постером фильма, при отсутствии постера показывается заглушка.
+6. Получение данных осуществляется с сервера, сохранение данных и манипуляция с данными осуществляется на сервер.
+### Приложение запускается на dev сервере командой npm run dev.
+### Сборка Приложение - команда npm run build.
+<br/>
+#### Для локального просмотра из скаченного и развёрнутого кода необходимо внести изменения в файле App.tsx:
+<br/> - строку <BrowserRouter basename='/CinemaGuide/'>
+<br/> - заменить на строку <BrowserRouter '>

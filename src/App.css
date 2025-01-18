@@ -305,6 +305,7 @@ body {
 
 .random__btn-style:hover:not(:focus) {
   background-color: #747474;
+  color: #fff;
 }
 
 .random__btn-style:active {
@@ -614,9 +615,7 @@ body {
   }
 
   .btn-exit {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: inline-block;
     padding: 16px 0;
     margin-bottom: 148px;
     width: 100%;

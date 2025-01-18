@@ -10,7 +10,6 @@ export interface MovieViewProps {
   number: number;
   setValueInput: React.Dispatch<React.SetStateAction<string>>;
 }
-
 export const SearchMovieView: FC<MovieViewProps> = ({
   movie,
   number,

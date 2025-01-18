@@ -122,21 +122,8 @@
   margin-right: 16px;
 }
 
-.favourites__icon {
-  display: block;
-  width: 24px;
-  height: 24px;
-  background-image: url(../../assets/favourites.svg);
-}
 
-.favourites__icon-true {
-  display: block;
-  width: 24px;
-  height: 24px;
-  background-image: url(../../assets/favourites=true.svg);
-}
-
-.favourites:hover {
+.favorite:hover {
   background-color: #747474;
 }
 
@@ -144,5 +131,5 @@
   display: block;
   width: 24px;
   height: 24px;
-  background-image: url(../../assets/update.svg);
+  background-image: url(update.svg);
 }

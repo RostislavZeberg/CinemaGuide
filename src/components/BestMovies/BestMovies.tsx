@@ -1,4 +1,4 @@
-import { FC } from "react";
+import { memo } from "react";
 import { MovieList } from "../../api/Movie";
 import { MovieView } from "../MovieView";
 import "./BestMovies.css";
@@ -7,9 +7,9 @@ interface BestMovieProps {
   bestMovie: MovieList;
 }
 
-export const BestMovies: FC<BestMovieProps> = ({ bestMovie }) => {
+export const BestMovies = memo<BestMovieProps>(({ bestMovie }) => {
   let count: number = 0;
-  
+
   function counter() {
     count += 1;
     return count;
@@ -27,4 +27,4 @@ export const BestMovies: FC<BestMovieProps> = ({ bestMovie }) => {
       </ul>
     </div>
   );
-};
+});

@@ -7,7 +7,6 @@ export const MovieIdContext = createContext<ContextMovieIdParams>({
 });
 
 type ContextAuthFormParams = { authForm: boolean };
-
 export const AuthFormContext = createContext<ContextAuthFormParams>({
   authForm: false,
 });
@@ -16,7 +15,6 @@ type ContextModalTrailerParams = {
   modalTrailer: boolean;
   setModalTrailer: (modalTrailer: boolean) => void;
 };
-
 export const ModalTrailerContext = createContext<ContextModalTrailerParams>({
   modalTrailer: false,
   setModalTrailer: () => {},
