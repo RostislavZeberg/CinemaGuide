@@ -25,6 +25,7 @@
 <br/> -просмотр личной информации;
 <br/> -выход из аккаунта;
 7. Получение данных осуществляется с сервера, сохранение данных и манипуляция с данными осуществляется на сервер.
+8. Использовались: hookform/resolvers, tanstack/react-query, axios, random, react-dom, react-hook-form, react-player, react-router-dom, video-react, zod.
 ### Приложение запускается на dev сервере командой npm run dev.
 ### Сборка Приложение - команда npm run build.
 
